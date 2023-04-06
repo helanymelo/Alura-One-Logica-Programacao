@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+</head>
+<body>
+    <script>
+
+        function skipLine(){
+            document.write('<br><br>')
+            document.write("*********************")
+            document.write('<br><br>')
+        }
+
+        function show(phrase){
+            document.write(phrase)
+            skipLine()
+        }
+
+        const limitDate = parseInt(prompt('Digite a data limite....'))
+        let worldCupYear = 1930
+        // alert('Teve copa em ' + worldCupYear)
+
+        // worldCupYear += 4
+        // alert('Teve copa em ' + worldCupYear)
+
+        while(worldCupYear <= limitDate){
+            show('Teve copa em ' + worldCupYear)
+            worldCupYear += 4
+        }
+
+        show('The End')
+
+    </script>
+</body>
+</html>
