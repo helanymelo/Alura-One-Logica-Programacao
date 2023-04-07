@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Advinhação</title>
+</head>
+<body>
+    <script>
+         function skipLine() {
+            document.write("<br>");
+        }
+    
+        function show(phrase) {
+            document.write("<h1>" + phrase + "</h1>");
+            skipLine();
+        }
+
+        let secret = Math.round(Math.random() * 10)
+        console.log(secret)
+        let guessSecret = parseInt(prompt('Digite um número'))
+
+        if(secret === guessSecret){
+           show('Você acertou!!!😎😎😎')
+        }else{
+            show('Você errou 😔😔, o número do segredo é ' + secret + '!')
+
+        }
+
+       
+    </script>
+</body>
+</html>
