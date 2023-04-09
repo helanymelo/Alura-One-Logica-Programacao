@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes NÃO repetidos</title>
+</head>
+<body>
+
+    <meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    var ingredientes = [];
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));  
+    var contador = 1;    
+
+    while(isNaN(quantidade)){
+        alert(`Digite a Quantidade de ingredientes`)
+        if(!quantidade)
+        alert('Saindo...até logo')
+       
+        document.write('<h1> Aperte F5 para começar novamente </h1>')
+        break;
+        
+        
+        
+       
+        
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));  
+        var contador = 1; 
+    }
+
+    while( contador <= quantidade) {      
+
+        var ingrediente = prompt("Informe o ingrediente Nº " + contador);
+        var repetido = false
+        
+        for( let i = 0;  i < ingredientes.length; i++){
+           
+            if(ingredientes[i] == ingrediente){
+                repetido = true
+                alert(`Esse ingrediente ${ingrediente.toUpperCase()} já foi adicionado. Insira um novo ingrediente!`)   
+                break;
+            }
+        }
+
+        if(repetido == false){
+            ingredientes.push("<br>" + ingrediente)
+                      
+            contador ++
+            
+
+        }
+        
+    }
+
+    
+    
+    
+    document.write(ingredientes);
+   
+    
+</script>
+    
+</body>
+</html>
