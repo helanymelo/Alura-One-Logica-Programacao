@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+
+<input />
+<button>Compare com o meu segredo</button>
+
+<script>
+
+  
+
+    // const secret = Math.round(Math.random() * 10);
+    // console.log(secret)
+
+    // var input = document.querySelector("input")
+    
+
+    // function showSecret() {
+
+    //     if(input.value == secret) {
+    //         alert("Você ACERTOU!");
+    //     } else {
+    //         alert("Você ERROU!");
+    //     }
+
+    //     input.value = "";
+    //     input.focus();
+    // }
+
+    // var button = document.querySelector("button");
+    // button.onclick = showSecret;
+
+
+    const secret = [0, 1, 2, 3, 9 ]
+
+    const input = document.querySelector('input')
+    input.focus()
+    
+    
+    function showSecret() {
+        let secretOk = false
+
+        for(let i = 0; i < secret.length; i++){
+            if(input.value == secret[i]){
+                alert('Você acertou')
+                secretOk = true
+                break;          
+        }
+    }
+        if(secretOk == false){
+
+            alert('Você errou!')
+        }
+        input.value=""
+        input.focus()
+    }
+    
+
+    var button = document.querySelector("button");
+    button.onclick = showSecret;
+
+
+    
+</script>
+</body>
+</html>

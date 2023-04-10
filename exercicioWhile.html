@@ -95,14 +95,81 @@
     // show(QtdGeracao.toFixed(2))
 
  /*--------------------------------------------------*/
-    const idade = parseInt(prompt("Qual é sua idade"));
-    const temCarteira = prompt("Tem carteira? Responda S ou N");
+    // const idade = parseInt(prompt("Qual é sua idade"));
+    // const temCarteira = prompt("Tem carteira? Responda S ou N");
 
-    if( idade >= 18 && temCarteira == "S") {
-        show("Pode dirigir 🚗🚗🚘 ");
-    } else {
-        show("Não pode dirigir 😔😔");
+    // if( idade >= 18 && temCarteira == "S") {
+    //     show("Pode dirigir 🚗🚗🚘 ");
+    // } else {
+    //     show("Não pode dirigir 😔😔");
+    // }
+/*--------------------------------------------------*/
+
+
+    // const password = prompt('Digite sua senha')
+
+    // if(password === '123456'){
+    //     alert('Acesso liberado')
+    // }else{
+    //     alert('Acesso Negado')
+    // }
+
+    // const a =  1 == 1
+    // const b = 10 < 11
+    // const c =  1 >= 1
+    // const d =  2 <= 1
+    // const e =  9 > 8
+
+    // console.log(a)
+    // console.log(b)
+    // console.log(c)
+    // console.log(d)
+    // console.log(e)
+
+  
+    // function pulaLinha() {
+    //     document.write("<br>");
+    // }
+
+    // function mostra(frase) {
+    //     document.write(frase);
+    //     pulaLinha();
+    // }
+
+    // function calculaImc(altura, peso) {
+
+    //     return peso / (altura * altura);
+        
+    // }  
+    // mostra("O meu IMC é : " + calculaImc(1.55, 55).toFixed(2));
+
+/*--------------------------------------------------*/
+
+
+
+
+    function pulaLinha() {
+        document.write("<br>");
     }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var resposta = ""; // ainda não tem a resposta
+
+    while(true) {
+
+        resposta = prompt("Qual é seu nome?");
+        if(resposta === 'SAIR'){
+            break;
+        }
+    }
+
+    mostra("FIM");
+
 
 
 
